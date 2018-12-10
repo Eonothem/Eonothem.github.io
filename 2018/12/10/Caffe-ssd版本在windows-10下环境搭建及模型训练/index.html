@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Caffe,DeepLearning,环境配置,">
 
 
 
@@ -86,17 +86,31 @@
 
 
 
-<meta name="description" content="不积跬步无以至千里">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://eonothem.github.io/categories/index.html">
+<meta name="description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version 编译：Visual Studio 2013  2.安装CUDA和cudnn">
+<meta name="keywords" content="Caffe,DeepLearning,环境配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Caffe-ssd版本在windows 10下环境搭建及模型训练">
+<meta property="og:url" content="https://eonothem.github.io/2018/12/10/Caffe-ssd版本在windows-10下环境搭建及模型训练/index.html">
 <meta property="og:site_name" content="Eonothem">
-<meta property="og:description" content="不积跬步无以至千里">
+<meta property="og:description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version 编译：Visual Studio 2013  2.安装CUDA和cudnn">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-09T03:38:49.243Z">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210001.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210002.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210003.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210004.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210005.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210006.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210007.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210008.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210009.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210010.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210011.png">
+<meta property="og:image" content="https://eonothem.github.io/images/20181210012.png">
+<meta property="og:updated_time" content="2018-12-10T12:36:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="不积跬步无以至千里">
+<meta name="twitter:title" content="Caffe-ssd版本在windows 10下环境搭建及模型训练">
+<meta name="twitter:description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version 编译：Visual Studio 2013  2.安装CUDA和cudnn">
+<meta name="twitter:image" content="https://eonothem.github.io/images/20181210001.png">
 
 
 
@@ -126,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="https://eonothem.github.io/categories/">
+  <link rel="canonical" href="https://eonothem.github.io/2018/12/10/Caffe-ssd版本在windows-10下环境搭建及模型训练/">
 
 
 
 
 
-  <title>categories | Eonothem</title>
+  <title>Caffe-ssd版本在windows 10下环境搭建及模型训练 | Eonothem</title>
   
 
 
@@ -299,40 +313,277 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://eonothem.github.io/2018/12/10/Caffe-ssd版本在windows-10下环境搭建及模型训练/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Eonothem">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar-img.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eonothem">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 2 个分类
+          <h1 class="post-title" itemprop="name headline">Caffe-ssd版本在windows 10下环境搭建及模型训练</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-10T19:50:02+08:00">
+                2018-12-10
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-10T20:36:17+08:00">
+                2018-12-10
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/DeepLearning/" itemprop="url" rel="index">
+                    <span itemprop="name">DeepLearning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/12/10/Caffe-ssd版本在windows-10下环境搭建及模型训练/" class="leancloud_visitors" data-flag-title="Caffe-ssd版本在windows 10下环境搭建及模型训练">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.7k
+                </span>
+              
+
+              
+
+              
             </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DeepLearning/">DeepLearning</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="1-配置环境"><a href="#1-配置环境" class="headerlink" title="1.配置环境"></a>1.配置环境</h2><ul>
+<li>系统：windows 10 64位</li>
+<li>GPU：GTX1080</li>
+<li>CUDA：9.0</li>
+<li>cudnn：7.0</li>
+<li>Python：Anaconda 2.7 version</li>
+<li>编译：Visual Studio 2013</li>
+</ul>
+<h2 id="2-安装CUDA和cudnn"><a href="#2-安装CUDA和cudnn" class="headerlink" title="2.安装CUDA和cudnn"></a>2.安装CUDA和cudnn</h2><a id="more"></a>
+<ul>
+<li><a href="https://developer.nvidia.com/cuda-toolkit-archive" target="_blank" rel="noopener">CUDA</a>可以直接在官网下载，并按照安装程序一步步默认即可</li>
+<li><a href="https://developer.nvidia.com/cudnn" target="_blank" rel="noopener">cudnn</a>官网下载之后解压会有一个cuda文件夹，解压即可</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CUDA各个版本下载地址：https://developer.nvidia.com/cuda-toolkit-archive</span><br><span class="line"></span><br><span class="line">cudnn下载地址：https://developer.nvidia.com/cudnn</span><br></pre></td></tr></table></figure>
+<h2 id="3-下载并编译caffe-ssd-microsoft"><a href="#3-下载并编译caffe-ssd-microsoft" class="headerlink" title="3.下载并编译caffe-ssd-microsoft"></a>3.下载并编译caffe-ssd-microsoft</h2><p>网上很多是通过caffe-windows编译修改成ssd版本，这里推荐使用<a href="https://github.com/conner99/caffe" target="_blank" rel="noopener">caffe-ssd-microsoft</a>版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">下载地址：https://github.com/conner99/caffe //选择ssd-microsoft分支</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/20181210001.png" alt="caffe-ssd-microsoft"></p>
+<h3 id="a-配置修改"><a href="#a-配置修改" class="headerlink" title="a. 配置修改"></a>a. 配置修改</h3><ul>
+<li>打卡windows文件夹，找到CommonSettings.props.example文件，备份，然后更改文件名为CommonSettings.props，然后使用VS2013打开Caffe.sln文件；<br><img src="/images/20181210002.png" alt="Caffe项目文件"></li>
+<li>VS中打开CommonSettings.props配置文件，然后修改以下配置，其中第24行为先将下载的cuDNN文件解压得到cuda文件夹，此行为cuda文件夹路径，第48行为Anaconda2安装文件夹路径；<br><img src="/images/20181210003.png" alt="CommonSettings.props配置文件修改"><br><img src="/images/20181210004.png" alt="CommonSettings.props配置文件修改"></li>
+<li>此时若发现libcaffe &amp; test_all未加载成功，关闭VS，然后打开CUDA安装路径下的MSbuildExtensions文件夹，拷贝该文件夹下的所有文件到C 盘 / Program File(x86) /MSBuild /Microsoft.Cpp /v4.0(这里取决于你安装的版本)  /V120 / BuildCustomizations 文件夹，替换目标中的文件；<br><img src="/images/20181210005.png" alt="libcaffe&amp;test_all模块加载"><br><img src="/images/20181210006.png" alt="CUDA安装路径下的MSbuildExtensions文件夹拷贝"><br><img src="/images/20181210007.png" alt="C 盘 / Program File(x86) /MSBuild /Microsoft.Cpp /v4.0(这里取决于你安装的版本)  /V120 / BuildCustomizations 文件夹替换"></li>
+<li>重新打开VS即可看到加载成功</li>
+</ul>
+<h3 id="b-编译"><a href="#b-编译" class="headerlink" title="b. 编译"></a>b. 编译</h3><ul>
+<li>首先编译libcaffe，设置libcaffe的属性页如下图所示：<br> <img src="/images/20181210008.png" alt="libcaffe属性页设置"></li>
+<li>编译libcaffe，会出现与boost相关的regex正则表达式库问题，项目中不需要，注释掉即可，即进入libcaffe中，搜索detection_output_layer.hpp /detection_output_layer.cpp /detection_output_layer.cu文件中所有的含有regex和rv的代码注释掉</li>
+<li>可能会出现expected an identifier in caffe.pb.h，出现与thrust相关的问题，打开bbox_util.cu文件，搜索并注释掉所有含thrust的语句</li>
+<li>在路径.\caffe-ssd-microsoft\include\caffe\3rdparty\下添加hungarian.h文件，在路径.\caffe-ssd-microsoft \src \caffe \3rdparty \下添加hungarian.cpp文件；在这里找这个文件,链接：<a href="http://pan.baidu.com/s/1mhYuf7y" target="_blank" rel="noopener">http://pan.baidu.com/s/1mhYuf7y</a> 密码：3jp2</li>
+<li>另外在编译过程中可能会出现一些依赖包的问题，常见的是opencv和gflags的问题显示为：</li>
+</ul>
+<blockquote>
+<p>error MSB4062: 未能从程序集 D:\NugetPackages\OpenCV.2.4.10\build\native\private\coapp.NuGetNativeMSBuildTasks.dll 加载任务“NuGetPackageOverlay”。未能加载文件或程序集“file:///E:\NugetPackages\OpenCV.2.4.10\build\native\private\coapp.NuGetNativeMSBuildTasks.dll”或它的某一个依赖项。系统找不到指定的文件。 请确认 <usingtask> 声明正确，该程序集及其所有依赖项都可用，并且该任务包含实现 Microsoft.Build.Framework.ITask 的公共类。D:\NugetPackages\OpenCV.2.4.11\build\native\OpenCV.targets1115 5 libcaffe</usingtask></p>
+</blockquote>
+<ul>
+<li>我在解决opencv问题时候发现解决这个问题的方法可能会是多种的，我的问题是在Github的issue中找到的解决方法，设置最大运行和编译数量为1</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/BVLC/caffe/issues/4788 //我使用了最后一个解决方法</span><br></pre></td></tr></table></figure>
+<p><img src="/images/20181210009.png" alt="issues中的解决办法"></p>
+<ul>
+<li>你的问题说不定会在issue的其他解决方案中找到答案，另外有人提出在NugetPackages \OpenCV.2.4.10 \build \native \OpenCV.props文件中修改删除private前面的’\’可以解决，另外一个麻烦一点的解决方法是删除自动下载的opencv包，然后手动配置各个项目的opencv依赖，参考博客如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://blog.csdn.net/qq_27278153/article/details/53667756</span><br></pre></td></tr></table></figure>
+<ul>
+<li>对于gflags也可以参照opencv的做法来尝试解决</li>
+<li>编译libcaffe还遇到的一个问题是提示 error MSB3721: 命令“”C:\Program Files \NVIDIA GPU Computing Toolkit \CUDA \v6.5 \bin\nvcc.exe” 后面跟了一大堆参数，其实出现这个问题主要是由于另一个问题引起的，即too few arguments···，全局搜索找到cudnnSetConvolution2dDescriptor函数（位于cudnn.hpp），为该函数增加一个参数：<br><img src="/images/20181210010.png" alt="全局搜索找到cudnnSetConvolution2dDescriptor函数(位于cudnn.hpp)"></li>
+<li>libcaffe编译成功之后，接下来就要编译caffe，编译caffe同样要设置属性页<br><img src="/images/20181210011.png" alt="设置caffe属性页"></li>
+<li>caffe项目在编译过程中可能会出现cuda相关库找不到的问题，此时在caffe属性页将安装的cuda路径添加到VC++目录中去：<br><img src="/images/20181210012.png" alt="在caffe属性页将安装的cuda路径添加到VC++目录中去"></li>
+<li>编译完caffe项目之后即可编译pycaffe项目和convert_imageset项目，相应的也要设置属性页中的VC++目录</li>
+</ul>
+<h3 id="c-模型训练"><a href="#c-模型训练" class="headerlink" title="c.模型训练"></a>c.模型训练</h3><ul>
+<li>在编译完成之后就可以进行模型的训练过程，模型训练过程中可能还会有一些问题，遇到之后再回来更改重新编译</li>
+<li>首先准备好自己的数据集，图片和文本文件，然后新建一个bat文件，作用是将数据集转换成模型训练需要的lmdb格式，双击运行即可</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">D:\caffe\Build\x64\Release\convert_imageset.exe --resize_height=300 --resize_width=300 --shuffle --backend=leveldb D:\caffe-ssd-microsoft\data\VOC0712\train\ D:\caffe-ssd-microsoft\data\VOC0712\train.txt  D:\caffe-ssd-microsoft\examples\myfile\VOC0712_trainval_lmdb</span><br><span class="line">D:\caffe\Build\x64\Release\convert_imageset.exe --resize_height=300 --resize_width=300 --shuffle --backend=leveldb D:\caffe-ssd-microsoft\data\VOC0712\test\ D:\caffe-ssd-microsoft\data\VOC0712\test.txt  D:\caffe-ssd-microsoft\examples\myfile\VOC0712_test_lmdb</span><br></pre></td></tr></table></figure>
+<ul>
+<li>lmdb文件生成之后，修改solver/test/train的三个网络文件，修改路径，然后新建一个bat文件，作用是训练数据生成模型，双击运行即可</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SET GLOG_logtostderr=1</span><br><span class="line">.\Build\x64\Release\caffe.exe train --solver=.\models\VGGNet\VOC0712\SSD_300x300\solver.prototxt</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+<ul>
+<li>模型训练中会出现distort_param / expand_param等参数无法被解析，这是由于从linux系统移植到windows系统下出现的参数问题，我的解决方法是对照之前linux系统下的caffe.proto文件，将无法解析的参数部分复制过来添加到目前系统下的caffe.proto文件（位于./caffe-ssd-microsoft/src/caffe/proto），然后重新按顺序编译，之前看到博客有建议说直接将这个文件复制过来替换现在的文件，但是替换之后编译会在多个文件报错，需要把报错文件都替换，所以我的做法是对比只添加未能解析的参数，然后重新编译工程，这个过程可能会浪费一些时间尝试</li>
+</ul>
+<h3 id="d-Python图像识别"><a href="#d-Python图像识别" class="headerlink" title="d.Python图像识别"></a>d.Python图像识别</h3><ul>
+<li>训练生成模型之后，就可以通过模型文件来做图像识别，我主要用的是Python，通过python调用caffe包来做识别</li>
+<li>首先将之前工程生成的./Build/x64/Release/pycaffe文件夹下面的caffe文件夹复制到Python的包目录下，即./Anaconda2/Lib/site-packages下面，然后在命令行下输入python/import caffe，执行成功则说明pycaffe编译成功</li>
+<li>将原linux下的python程序移植到windows基本没遇到什么问题，需要修改一下路径，然后我遇到的一个问题是有一个包VDBSCAB在windows下无法安装，我的解决办法是直接通过原linux系统将该包复制过来添加到python的包目录下即可</li>
+<li>至此Caffe-ssd版本从linux系统下移植到windows完成。</li>
+</ul>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Caffe/" rel="tag"><i class="fa fa-tag"></i> Caffe</a>
+          
+            <a href="/tags/DeepLearning/" rel="tag"><i class="fa fa-tag"></i> DeepLearning</a>
+          
+            <a href="/tags/环境配置/" rel="tag"><i class="fa fa-tag"></i> 环境配置</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/08/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -365,8 +616,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -450,6 +710,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置环境"><span class="nav-number">1.</span> <span class="nav-text">1.配置环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装CUDA和cudnn"><span class="nav-number">2.</span> <span class="nav-text">2.安装CUDA和cudnn</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-下载并编译caffe-ssd-microsoft"><span class="nav-number">3.</span> <span class="nav-text">3.下载并编译caffe-ssd-microsoft</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-配置修改"><span class="nav-number">3.1.</span> <span class="nav-text">a. 配置修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-编译"><span class="nav-number">3.2.</span> <span class="nav-text">b. 编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-模型训练"><span class="nav-number">3.3.</span> <span class="nav-text">c.模型训练</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-Python图像识别"><span class="nav-number">3.4.</span> <span class="nav-text">d.Python图像识别</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
