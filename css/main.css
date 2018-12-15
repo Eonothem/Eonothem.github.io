@@ -1918,7 +1918,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #85c3f1;
+  background: #7516ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3007,8 +3007,8 @@ hr {
   margin-top: 0px;
   margin-bottom: 60px;
   padding: 25px;
-  -webkit-box-shadow: 0 0 10px #dcdc99;
-  -moz-box-shadow: 0 0 10px #dcdc99;
+  -webkit-box-shadow: 0 0 10px #cacbcb;
+  -moz-box-shadow: 0 0 10px #cacbcc;
 }
 .post-body p a {
   color: #0593d3;
