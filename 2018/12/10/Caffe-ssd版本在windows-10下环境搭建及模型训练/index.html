@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Caffe,DeepLearning,环境配置,">
+  <meta name="keywords" content="Caffe,DeepLearning,Environment,">
 
 
 
@@ -88,13 +88,13 @@
 
 
 
-<meta name="description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version 编译：Visual Studio 2013  2.安装CUDA和cudnn">
-<meta name="keywords" content="Caffe,DeepLearning,环境配置">
+<meta name="description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version">
+<meta name="keywords" content="Caffe,DeepLearning,Environment">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Caffe-ssd版本在windows 10下环境搭建及模型训练">
 <meta property="og:url" content="https://eonothem.github.io/2018/12/10/Caffe-ssd版本在windows-10下环境搭建及模型训练/index.html">
 <meta property="og:site_name" content="Eonothem">
-<meta property="og:description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version 编译：Visual Studio 2013  2.安装CUDA和cudnn">
+<meta property="og:description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://eonothem.github.io/images/20181210001.png">
 <meta property="og:image" content="https://eonothem.github.io/images/20181210002.png">
@@ -108,10 +108,10 @@
 <meta property="og:image" content="https://eonothem.github.io/images/20181210010.png">
 <meta property="og:image" content="https://eonothem.github.io/images/20181210011.png">
 <meta property="og:image" content="https://eonothem.github.io/images/20181210012.png">
-<meta property="og:updated_time" content="2018-12-10T12:36:17.000Z">
+<meta property="og:updated_time" content="2019-01-09T04:28:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Caffe-ssd版本在windows 10下环境搭建及模型训练">
-<meta name="twitter:description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version 编译：Visual Studio 2013  2.安装CUDA和cudnn">
+<meta name="twitter:description" content="1.配置环境 系统：windows 10 64位 GPU：GTX1080 CUDA：9.0 cudnn：7.0 Python：Anaconda 2.7 version">
 <meta name="twitter:image" content="https://eonothem.github.io/images/20181210001.png">
 
 
@@ -372,8 +372,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-10T20:36:17+08:00">
-                2018-12-10
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-09T12:28:17+08:00">
+                2019-01-09
               </time>
             
           </span>
@@ -464,45 +464,22 @@
 <li>CUDA：9.0</li>
 <li>cudnn：7.0</li>
 <li>Python：Anaconda 2.7 version</li>
+</ul>
+<a id="more"></a>
+<ul>
 <li>编译：Visual Studio 2013</li>
 </ul>
-<h2 id="2-安装CUDA和cudnn"><a href="#2-安装CUDA和cudnn" class="headerlink" title="2.安装CUDA和cudnn"></a>2.安装CUDA和cudnn</h2><a id="more"></a>
-<ul>
+<h2 id="2-安装CUDA和cudnn"><a href="#2-安装CUDA和cudnn" class="headerlink" title="2.安装CUDA和cudnn"></a>2.安装CUDA和cudnn</h2><ul>
 <li><a href="https://developer.nvidia.com/cuda-toolkit-archive" target="_blank" rel="noopener">CUDA</a>可以直接在官网下载，并按照安装程序一步步默认即可</li>
 <li><a href="https://developer.nvidia.com/cudnn" target="_blank" rel="noopener">cudnn</a>官网下载之后解压会有一个cuda文件夹，解压即可</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CUDA各个版本下载地址：https://developer.nvidia.com/cuda-toolkit-archive</span><br><span class="line"></span><br><span class="line">cudnn下载地址：https://developer.nvidia.com/cudnn</span><br></pre></td></tr></table></figure>
 <h2 id="3-下载并编译caffe-ssd-microsoft"><a href="#3-下载并编译caffe-ssd-microsoft" class="headerlink" title="3.下载并编译caffe-ssd-microsoft"></a>3.下载并编译caffe-ssd-microsoft</h2><p>网上很多是通过caffe-windows编译修改成ssd版本，这里推荐使用<a href="https://github.com/conner99/caffe" target="_blank" rel="noopener">caffe-ssd-microsoft</a>版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">下载地址：https://github.com/conner99/caffe //选择ssd-microsoft分支</span><br></pre></td></tr></table></figure></p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20181210001.png" alt="caffe-ssd-microsoft" title="">
-                </div>
-                <div class="image-caption">caffe-ssd-microsoft</div>
-            </figure>
+<p><img src="/images/20181210001.png" alt="caffe-ssd-microsoft"></p>
 <h3 id="a-配置修改"><a href="#a-配置修改" class="headerlink" title="a. 配置修改"></a>a. 配置修改</h3><ul>
 <li>打卡windows文件夹，找到CommonSettings.props.example文件，备份，然后更改文件名为CommonSettings.props，然后使用VS2013打开Caffe.sln文件；<br><img src="/images/20181210002.png" alt="Caffe项目文件"></li>
-<li>VS中打开CommonSettings.props配置文件，然后修改以下配置，其中第24行为先将下载的cuDNN文件解压得到cuda文件夹，此行为cuda文件夹路径，第48行为Anaconda2安装文件夹路径；<br><img src="/images/20181210003.png" alt="CommonSettings.props配置文件修改"><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20181210004.png" alt="CommonSettings.props配置文件修改" title="">
-                </div>
-                <div class="image-caption">CommonSettings.props配置文件修改</div>
-            </figure></li>
-<li>此时若发现libcaffe &amp; test_all未加载成功，关闭VS，然后打开CUDA安装路径下的MSbuildExtensions文件夹，拷贝该文件夹下的所有文件到C 盘 / Program File(x86) /MSBuild /Microsoft.Cpp /v4.0(这里取决于你安装的版本)  /V120 / BuildCustomizations 文件夹，替换目标中的文件；<br><img src="/images/20181210005.png" alt="libcaffe&amp;test_all模块加载"><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20181210006.png" alt="CUDA安装路径下的MSbuildExtensions文件夹拷贝" title="">
-                </div>
-                <div class="image-caption">CUDA安装路径下的MSbuildExtensions文件夹拷贝</div>
-            </figure>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20181210007.png" alt="C 盘 / Program File(x86) /MSBuild /Microsoft.Cpp /v4.0(这里取决于你安装的版本)  /V120 / BuildCustomizations 文件夹替换" title="">
-                </div>
-                <div class="image-caption">C 盘 / Program File(x86) /MSBuild /Microsoft.Cpp /v4.0(这里取决于你安装的版本)  /V120 / BuildCustomizations 文件夹替换</div>
-            </figure></li>
+<li>VS中打开CommonSettings.props配置文件，然后修改以下配置，其中第24行为先将下载的cuDNN文件解压得到cuda文件夹，此行为cuda文件夹路径，第48行为Anaconda2安装文件夹路径；<br><img src="/images/20181210003.png" alt="CommonSettings.props配置文件修改"><br><img src="/images/20181210004.png" alt="CommonSettings.props配置文件修改"></li>
+<li>此时若发现libcaffe &amp; test_all未加载成功，关闭VS，然后打开CUDA安装路径下的MSbuildExtensions文件夹，拷贝该文件夹下的所有文件到C 盘 / Program File(x86) /MSBuild /Microsoft.Cpp /v4.0(这里取决于你安装的版本)  /V120 / BuildCustomizations 文件夹，替换目标中的文件；<br><img src="/images/20181210005.png" alt="libcaffe&amp;test_all模块加载"><br><img src="/images/20181210006.png" alt="CUDA安装路径下的MSbuildExtensions文件夹拷贝"><br><img src="/images/20181210007.png" alt="C 盘 / Program File(x86) /MSBuild /Microsoft.Cpp /v4.0(这里取决于你安装的版本)  /V120 / BuildCustomizations 文件夹替换"></li>
 <li>重新打开VS即可看到加载成功</li>
 </ul>
 <h3 id="b-编译"><a href="#b-编译" class="headerlink" title="b. 编译"></a>b. 编译</h3><ul>
@@ -519,13 +496,7 @@
 <li>我在解决opencv问题时候发现解决这个问题的方法可能会是多种的，我的问题是在Github的issue中找到的解决方法，设置最大运行和编译数量为1</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/BVLC/caffe/issues/4788 //我使用了最后一个解决方法</span><br></pre></td></tr></table></figure>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20181210009.png" alt="issues中的解决办法" title="">
-                </div>
-                <div class="image-caption">issues中的解决办法</div>
-            </figure>
+<p><img src="/images/20181210009.png" alt="issues中的解决办法"></p>
 <ul>
 <li>你的问题说不定会在issue的其他解决方案中找到答案，另外有人提出在NugetPackages \OpenCV.2.4.10 \build \native \OpenCV.props文件中修改删除private前面的’\’可以解决，另外一个麻烦一点的解决方法是删除自动下载的opencv包，然后手动配置各个项目的opencv依赖，参考博客如下：</li>
 </ul>
@@ -576,7 +547,7 @@
           
             <a href="/tags/DeepLearning/" rel="tag"><i class="fa fa-tag"></i> DeepLearning</a>
           
-            <a href="/tags/环境配置/" rel="tag"><i class="fa fa-tag"></i> 环境配置</a>
+            <a href="/tags/Environment/" rel="tag"><i class="fa fa-tag"></i> Environment</a>
           
         </div>
       
@@ -589,15 +560,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/08/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/10/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -687,7 +658,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -698,7 +669,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
